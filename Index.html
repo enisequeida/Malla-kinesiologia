@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular – Kinesiología UNAB</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Malla Curricular Kinesiología UNAB</h1>
+
+  <div class="semestres">
+
+    <!-- 1° SEMESTRE -->
+    <div class="semestre" id="sem-1">
+      <h2>1° Semestre</h2>
+      <div class="ramo" data-codigo="BIOL038"><button class="bloqueado" onclick="toggleRamo(this)">Bases Químico-Biológicas de la Célula</button></div>
+      <div class="ramo" data-codigo="CEGHC11"><button class="bloqueado" onclick="toggleRamo(this)">Habilidades Comunicativas</button></div>
+      <div class="ramo" data-codigo="FCRE001"><button class="bloqueado" onclick="toggleRamo(this)">Rehabilitación e Inclusión (DD.HH.)</button></div>
+      <div class="ramo" data-codigo="KINE101"><button class="bloqueado" onclick="toggleRamo(this)">Fundamentos de Kinesiología</button></div>
+      <div class="ramo" data-codigo="KINE102"><button class="bloqueado" onclick="toggleRamo(this)">Corporalidad y Actividad Física</button></div>
+      <div class="ramo" data-codigo="MORF318"><button class="bloqueado" onclick="toggleRamo(this)">Anatomía de Sistemas</button></div>
+    </div>
+
+    <!-- 2° SEMESTRE -->
+    <div class="semestre" id="sem-2">
+      <h2>2° Semestre</h2>
+      <div class="ramo" data-codigo="BIOL188"><button class="bloqueado" onclick="toggleRamo(this)">Fisiología General y Neurofisiología</button></div>
+      <div class="ramo" data-codigo="ING119"><button class="bloqueado" onclick="toggleRamo(this)">Inglés I</button></div>
+      <div class="ramo" data-codigo="KINE103"><button class="bloqueado" onclick="toggleRamo(this)">Desarrollo Sensorio-Motriz</button></div>
+      <div class="ramo" data-codigo="KINE104"><button class="bloqueado" onclick="toggleRamo(this)">Fundamentos del Movimiento Humano</button></div>
+      <div class="ramo" data-codigo="MORF319"><button class="bloqueado" onclick="toggleRamo(this)">Anatomía Sistema Músculo-Esquelético</button></div>
+    </div>
+
+    <!-- 3° SEMESTRE -->
+    <div class="semestre" id="sem-3">
+      <h2>3° Semestre</h2>
+      <div class="ramo" data-codigo="BIOL288"><button class="bloqueado" onclick="toggleRamo(this)">Fisiología de Sistemas</button></div>
+      <div class="ramo" data-codigo="ING129"><button class="bloqueado" onclick="toggleRamo(this)">Inglés II</button></div>
+      <div class="ramo" data-codigo="KINE203"><button class="bloqueado" onclick="toggleRamo(this)">Kinesiología y Movimiento Humano</button></div>
+      <div class="ramo" data-codigo="KINE204"><button class="bloqueado" onclick="toggleRamo(this)">Epistemología y Metodología de la Investigación</button></div>
+      <div class="ramo" data-codigo="SPAB113"><button class="bloqueado" onclick="toggleRamo(this)">Salud Pública</button></div>
+    </div>
+
+    <!-- 4° SEMESTRE -->
+    <div class="semestre" id="sem-4">
+      <h2>4° Semestre</h2>
+      <div class="ramo" data-codigo="ING239"><button class="bloqueado" onclick="toggleRamo(this)">Inglés III</button></div>
+      <div class="ramo" data-codigo="KINE206"><button class="bloqueado" onclick="toggleRamo(this)">Análisis Cualitativo y Cuantitativo</button></div>
+      <div class="ramo" data-codigo="KINE207"><button class="bloqueado" onclick="toggleRamo(this)">Razonamiento en Kinesiología</button></div>
+      <div class="ramo" data-codigo="KINE208"><button class="bloqueado" onclick="toggleRamo(this)">Fisiopatología</button></div>
+      <div class="ramo" data-codigo="KINE209"><button class="bloqueado" onclick="toggleRamo(this)">Control y Análisis Kinesiológico del Movimiento</button></div>
+    </div>
+
+    <!-- 5° SEMESTRE -->
+    <div class="semestre" id="sem-5">
+      <h2>5° Semestre</h2>
+      <div class="ramo" data-codigo="ING249"><button class="bloqueado" onclick="toggleRamo(this)">Inglés IV</button></div>
+      <div class="ramo" data-codigo="KINE311"><button class="bloqueado" onclick="toggleRamo(this)">Fisiología del Ejercicio</button></div>
+      <div class="ramo" data-codigo="KINE312"><button class="bloqueado" onclick="toggleRamo(this)">Políticas en Rehabilitación e Inclusión</button></div>
+      <div class="ramo" data-codigo="KINE313"><button class="bloqueado" onclick="toggleRamo(this)">Integración en Kinesiología I</button></div>
+      <div class="ramo" data-codigo="KINE314"><button class="bloqueado" onclick="toggleRamo(this)">Ciclo Vital y Funcionamiento Humano</button></div>
+    </div>
+
+    <!-- 6° SEMESTRE -->
+    <div class="semestre" id="sem-6">
+      <h2>6° Semestre</h2>
+      <div class="ramo" data-codigo="CEGPC13"><button class="bloqueado" onclick="toggleRamo(this)">Pensamiento Crítico</button></div>
+      <div class="ramo" data-codigo="FCRE002"><button class="bloqueado" onclick="toggleRamo(this)">Diagnóstico Interdisciplinario en Rehabilitación</button></div>
+      <div class="ramo" data-codigo="KINE315"><button class="bloqueado" onclick="toggleRamo(this)">Eval.&nbsp;y Diagnóstico Músculo-Esquelético</button></div>
+      <div class="ramo" data-codigo="KINE316"><button class="bloqueado" onclick="toggleRamo(this)">Eval.&nbsp;y Diagnóstico en Neurokinesiología</button></div>
+      <div class="ramo" data-codigo="KINE317"><button class="bloqueado" onclick="toggleRamo(this)">Atención Primaria y Salud Familiar</button></div>
+      <div class="ramo" data-codigo="KINE318"><button class="bloqueado" onclick="toggleRamo(this)">Eval.&nbsp;y Diagnóstico Cardiorespiratorio</button></div>
+    </div>
+
+    <!-- 7° SEMESTRE -->
+    <div class="semestre" id="sem-7">
+      <h2>7° Semestre</h2>
+      <div class="ramo" data-codigo="KINE414"><button class="bloqueado" onclick="toggleRamo(this)">Intervención Sistema Cardiorespiratorio</button></div>
+      <div class="ramo" data-codigo="KINE415"><button class="bloqueado" onclick="toggleRamo(this)">Intervención Sistema Músculo-Esquelético</button></div>
+      <div class="ramo" data-codigo="KINE416"><button class="bloqueado" onclick="toggleRamo(this)">Intervención en Neurokinesiología</button></div>
+      <div class="ramo" data-codigo="KINE418"><button class="bloqueado" onclick="toggleRamo(this)">Agentes Físicos</button></div>
+      <div class="ramo" data-codigo="KINE420"><button class="bloqueado" onclick="toggleRamo(this)">Proceso Investigativo I</button></div>
+      <div class="ramo" data-codigo="SPAB112"><button class="bloqueado" onclick="toggleRamo(this)">Administración y Gestión en Salud</button></div>
+    </div>
+
+    <!-- 8° SEMESTRE -->
+    <div class="semestre" id="sem-8">
+      <h2>8° Semestre</h2>
+      <div class="ramo" data-codigo="FCRE003"><button class="bloqueado" onclick="toggleRamo(this)">Intervención Interdisciplinaria en Rehabilitación</button></div>
+      <div class="ramo" data-codigo="KINE426"><button class="bloqueado" onclick="toggleRamo(this)">Kinesiología en Áreas de Especialidad</button></div>
+      <div class="ramo" data-codigo="KINE427"><button class="bloqueado" onclick="toggleRamo(this)">Actividad Física y Prescripción de Ejercicio</button></div>
+      <div class="ramo" data-codigo="KINE428"><button class="bloqueado" onclick="toggleRamo(this)">Proyectos, Innovación y Emprendimiento</button></div>
+      <div class="ramo" data-codigo="KINE429"><button class="bloqueado" onclick="toggleRamo(this)">Proceso Investigativo II</button></div>
+      <div class="ramo" data-codigo="KINE430"><button class="bloqueado" onclick="toggleRamo(this)">Integración en Kinesiología II</button></div>
+    </div>
+
+    <!-- 9° SEMESTRE -->
+    <div class="semestre" id="sem-9">
+      <h2>9° Semestre</h2>
+      <div class="ramo" data-codigo="KINE511"><button class="bloqueado" onclick="toggleRamo(this)">Práctica Profesional I</button></div>
+      <div class="ramo" data-codigo="KINE512"><button class="bloqueado" onclick="toggleRamo(this)">Práctica Profesional II</button></div>
+    </div>
+
+    <!-- 10° SEMESTRE -->
+    <div class="semestre" id="sem-10">
+      <h2>10° Semestre</h2>
+      <div class="ramo" data-codigo="KINE521"><button class="bloqueado" onclick="toggleRamo(this)">Práctica Profesional III</button></div>
+      <div class="ramo" data-codigo="KINE522"><button class="bloqueado" onclick="toggleRamo(this)">Práctica Profesional IV + Titulación</button></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
