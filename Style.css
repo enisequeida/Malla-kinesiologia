@@ -1,0 +1,71 @@
+/* ——— Paleta rosada y tipografía limpia ——— */
+:root {
+  --rosa-pastel: #ffe6f0;
+  --rosa-claro : #ffd4e4;
+  --rosa-medio : #f8bbd0;
+  --rosa-fuerte: #cc3366;
+  --verde-ok   : #2e7d32;
+}
+
+* { box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:var(--rosa-pastel);
+  color:#333;
+  padding:20px;
+  text-align:center;
+}
+
+h1{ color:var(--rosa-fuerte); margin:0 0 30px; }
+
+.semestres{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
+}
+
+/* Tarjeta semestre */
+.semestre{
+  background:#fff0f5;
+  border:2px solid var(--rosa-claro);
+  border-radius:10px;
+  padding:15px;
+  width:300px;
+}
+
+.semestre h2{ color:var(--rosa-fuerte); font-size:1.25rem; margin:0 0 10px; }
+
+.ramo{ margin:8px 0; }
+
+/* Botones-ramos */
+button{
+  width:100%;
+  padding:10px;
+  font-size:0.9rem;
+  border:none;
+  border-radius:6px;
+  transition:background 0.25s;
+  cursor:pointer;
+  background:var(--rosa-medio);
+  color:#6a1b3f;
+}
+
+/* Estado hover */
+button:hover{ background:#f48fb1; }
+
+/* Estado aprobado */
+.aprobado{
+  background:#d9f5e4 !important;
+  color:var(--verde-ok) !important;
+}
+
+/* Estado bloqueado */
+.bloqueado{
+  background:#ffe4e1;
+  color:#888;
+  cursor:not-allowed;
+  pointer-events:none;
+}
